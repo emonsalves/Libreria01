@@ -19,11 +19,13 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "dependencies": {
+  "peerdependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+        "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "@eslint/js": "^9.8.0",
     "@types/node": "^22.2.0",
     "@types/react": "^18.3.3",

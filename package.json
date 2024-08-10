@@ -3,6 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": ["dist"],
+  "main": "./dist/nig-ui.umd.cjs",
+  "module": "./dist/nig-ui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/nig-ui.js",
+      "require": "./dist/nig-ui.umd.cjs"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

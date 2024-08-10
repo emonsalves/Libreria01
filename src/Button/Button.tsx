@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, FC } from "react";
+import { ButtonHTMLAttributes, FC, forwardRef } from "react";
 import { cn } from "../utils/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 
@@ -32,6 +32,12 @@ const button = cva(
         full: "h-16 px-14 w-full text-2xl",
       },
     },
+    compoundVariants: [
+      { variant: "primary", outline: true, className: "border-blue-500 hover:bg-blue-500" },
+      { variant: "success", outline: true, className: "border-green-500 hover:bg-green-500" },
+      { variant: "warning", outline: true, className: "border-orange-400 hover:bg-orange-400" },
+      { variant: "danger", outline: true, className: "border-red-600 hover:bg-red-600" },
+    ],
     defaultVariants: {
       variant: "default",
       size: "md",
@@ -42,10 +48,12 @@ const button = cva(
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>, VariantProps<typeof button> {}
 
-export const Button: FC<ButtonProps> = ({ children, className, variant, outline, rounded, size, ...props }) => {
-  return (
-    <button className={cn(button({ variant, outline, rounded, size, className }))} {...props}>
-      {children}
-    </button>
-  );
-};
+export const Button: FC<ButtonProps> = forwardRef<HTMLButtonElement, ButtonProps>(
+  ({ children, className, variant, outline, rounded, size, ...props }) => {
+    return (
+      <button className={cn(button({ variant, outline, rounded, size, className }))} {...props}>
+        {children}
+      </button>
+    );
+  },
+);

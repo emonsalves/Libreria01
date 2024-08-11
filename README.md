@@ -2,7 +2,7 @@
 
 Versions
 
-V0.0.2 => Working
+V1.0.0 => started config story book with 3 componnents
 
 Put this in your base componnent for use it.
 

@@ -3,9 +3,7 @@
   "private": false,
   "version": "1.0.0",
   "type": "module",
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "main": "./dist/nig-ui.umd.cjs",
   "module": "./dist/nig-ui.js",
   "exports": {

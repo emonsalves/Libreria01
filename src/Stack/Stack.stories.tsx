@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Stack } from "./Stack";
 import { ComponentProps } from "react";
 
-interface ExampleComponnentProps extends ComponentProps<typeof Stack> {
+export interface ExampleComponnentProps extends ComponentProps<typeof Stack> {
   childrenQuantity?: number;
 }
 

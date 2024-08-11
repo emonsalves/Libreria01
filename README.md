@@ -8,4 +8,4 @@ Put this in your base componnent for use it.
 
 import "libreria01/dist/style.css"
 
-try2
+added story book page

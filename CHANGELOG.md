@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/emonsalves/Libreria01/compare/v1.2.0...v1.3.0) (2024-08-11)
+
+
+### Features
+
+* **text component:** change ([a6697c4](https://github.com/emonsalves/Libreria01/commit/a6697c453114a1a3c2832793e166a66fa90deefe))
+
 # [1.2.0](https://github.com/emonsalves/Libreria01/compare/v1.1.0...v1.2.0) (2024-08-11)
 
 

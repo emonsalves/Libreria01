@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/emonsalves/Libreria01/compare/v1.4.0...v1.5.0) (2024-08-12)
+
+
+### Features
+
+* **Readme:** update readme ([933200e](https://github.com/emonsalves/Libreria01/commit/933200ec9b79f853fa1a7661c5390f36845fc96b))
+
 # [1.4.0](https://github.com/emonsalves/Libreria01/compare/v1.3.0...v1.4.0) (2024-08-12)
 
 
